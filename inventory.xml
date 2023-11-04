@@ -1,0 +1,62 @@
+<inventory>
+  <product id="1">
+    <name>Intel Core i9-10900K CPU</name>
+    <category>CPU</category>
+    <price>40000</price>
+    <stock>15</stock>
+  </product>
+  <product id="2">
+    <name>AMD Ryzen 9 5900X CPU</name>
+    <category>CPU</category>
+    <price>31500</price>
+    <stock>10</stock>
+  </product>
+  <product id="3">
+    <name>NVIDIA GeForce RTX 3080 GPU</name>
+    <category>GPU</category>
+    <price>45500</price>
+    <stock>8</stock>
+  </product>
+  <product id="4">
+    <name>Crucial Ballistix 32GB RAM</name>
+    <category>Memory</category>
+    <price>8500</price>
+    <stock>20</stock>
+  </product>
+  <product id="5">
+    <name>Samsung 1TB NVMe SSD</name>
+    <category>Storage</category>
+    <price>11500</price>
+    <stock>25</stock>
+  </product>
+  <product id="6">
+    <name>ASUS ROG Strix B550-F Motherboard</name>
+    <category>Motherboard</category>
+    <price>11500</price>
+    <stock>12</stock>
+  </product>
+  <product id="7">
+    <name>Corsair RM750x 750W PSU</name>
+    <category>Power Supply</category>
+    <price>7500</price>
+    <stock>18</stock>
+  </product>
+  <product id="8">
+    <name>Corsair Crystal 570X RGB Case</name>
+    <category>Peripheral</category>
+    <price>10500</price>
+    <stock>7</stock>
+  </product>
+  <product id="9">
+    <name>Logitech G Pro X Mechanical Keyboard</name>
+    <category>Peripheral</category>
+    <price>8500</price>
+    <stock>14</stock>
+  </product>
+  <product id="10">
+    <name>Logitech G Pro Wireless Mouse</name>
+    <category>Peripheral</category>
+    <price>5700</price>
+    <stock>22</stock>
+  </product>
+</inventory>

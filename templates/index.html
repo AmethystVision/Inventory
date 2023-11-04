@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Inventory Management</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Login</a></li>
+            </ul>
+        </nav>
+        <h1>Inventory Management</h1>
+    </header>
+
+    <div class="glassmorphism">
+        <span>
+            <h2>Inventory Items</h2>
+        </span>
+        <button class="add-button" onclick="add()">Add Product</button>
+        
+        <span class="dropdown-menu">
+            <input type="search" id="search" placeholder="Search for...">
+            <select id="filterCategory">
+                <option value="all">All Categories</option>
+                <option value="CPU">CPU</option>
+                <option value="GPU">GPU</option>
+                <option value="Memory">Memory</option>
+                <option value="Storage">Storage</option>
+                <option value="Motherboard">Motherboard</option>
+                <option value="Power Supply">Power Supply</option>
+                <option value="Case">Case</option>
+                <option value="Peripheral">Peripheral</option>
+            </select>
+            <button class = "button" id="search-button" onclick="searchProducts()">Search</button>
+        </span>
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Category</th>
+                        <th>Stock</th>
+                        <th>Price</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="inventory-list">
+                    <!-- Table rows go here -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+    
+
+    <div class="glassmorphism" id="add" style="display: none">
+        <h2>Add Product</h2>
+        <input type="text" id="name" placeholder="Product Name">
+        <div class="input-row">
+            <select id="category">
+                <option value="CPU">CPU</option>
+                <option value="GPU">GPU</option>
+                <option value="Memory">Memory</option>
+                <option value="Storage">Storage</option>
+                <option value="Motherboard">Motherboard</option>
+                <option value="Power Supply">Power Supply</option>
+                <option value="Case">Case</option>
+                <option value="Peripheral">Peripheral</option>
+            </select>
+            <input type="number" id="stock" placeholder="Stock">
+            <input type="number" id="price" placeholder="Price">
+        </div>
+        <div class="button-container">
+            <button class="button" onclick="addProduct()">Add Product</button>
+        </div>
+    </div>
+
+    <div class="glassmorphism" id="edit-product" style="display: none;">
+        <h2>Update Product</h2>
+        <input type="text" id="edit-name" placeholder="Product Name">
+        <div class="input-row">
+            <select id="edit-category">
+                <option value="CPU">CPU</option>
+                <option value="GPU">GPU</option>
+                <option value="Memory">Memory</option>
+                <option value="Storage">Storage</option>
+                <option value="Motherboard">Motherboard</option>
+                <option value="Power Supply">Power Supply</option>
+                <option value="Case">Case</option>
+                <option value="Peripheral">Peripheral</option>
+            </select>
+            <input type="number" id="edit-stock" placeholder="Stock">
+            <input type="number" id="edit-price" placeholder="Price">
+        </div>
+        <div class="button-container">
+            <button class="button" onclick="updateProduct(selectedProductId)">Update Product</button>
+        </div>
+    </div>
+</body>
+<script src="/static/scripts.js"></script>
+</html>
